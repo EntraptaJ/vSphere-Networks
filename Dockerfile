@@ -26,7 +26,7 @@ RUN mkdir -p ${PS_INSTALL_FOLDER}
 # Unzip the Linux tar.gz
 RUN tar zxf /tmp/linux.tar.gz -C ${PS_INSTALL_FOLDER}
 
-FROM alpine:3.10
+FROM alpine:3.8
 ENV NODE_ENV=production
 ARG PS_INSTALL_VERSION=6
 ENV PS_INSTALL_FOLDER=/opt/microsoft/powershell/$PS_INSTALL_VERSION \
