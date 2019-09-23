@@ -1,0 +1,10 @@
+{
+  "host": "vmhost1.srv.example.com",
+  "vSwitch": "vSwitch1",
+  "networks": [
+    {
+      "name": "HelloWorld",
+      "vlan": 500
+    }
+  ]
+}
