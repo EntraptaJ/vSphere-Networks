@@ -9,11 +9,10 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Publish to Registry
-      uses: KristianFJones/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@master
       with:
         dockerfile: API/Dockerfile
         name: docker.pkg.github.com/kristianfjones/vcenter-networks/vcenter-network
         username: ${{ secrets.DOCKER_GITHUB_USERNAME }}
         password: ${{ secrets.DOCKER_GITHUB_PASSWORD }}
         registry: docker.pkg.github.com
-        path: .
