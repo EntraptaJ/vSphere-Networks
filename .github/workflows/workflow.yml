@@ -11,7 +11,7 @@ jobs:
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        dockerfile: API/Dockerfile
+        dockerfile: Dockerfile
         name: docker.pkg.github.com/kristianfjones/vcenter-networks/vcenter-network
         username: ${{ secrets.DOCKER_GITHUB_USERNAME }}
         password: ${{ secrets.DOCKER_GITHUB_PASSWORD }}
