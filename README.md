@@ -4,11 +4,11 @@
 
 **Environment Variables**
 
-| Variable | Description      |
-| :------- | ---------------- |
-| `URL`    | vCenter URL      |
-| `USER`   | vCenter Username |
-| `PASS`   | vCenter Password |
+| Variable   | Description      |
+| :--------- | ---------------- |
+| `URL`      | vCenter URL      |
+| `USERNAME` | vCenter Username |
+| `PASSWORD` | vCenter Password |
 
 ## Networks.json
 
