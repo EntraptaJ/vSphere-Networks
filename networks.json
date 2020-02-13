@@ -1,10 +1,14 @@
 {
-  "host": "vmhost1.srv.example.com",
-  "vSwitch": "vSwitch1",
+  "host": "192.168.10.11",
+  "vSwitch": "Frontend",
   "networks": [
     {
-      "name": "HelloWorld",
-      "vlan": 500
+      "name": "Server Public 1",
+      "vlan": 10
+    },
+    {
+      "name": "Server Public 2",
+      "vlan": 20
     }
   ]
 }

@@ -1,18 +1,18 @@
 name: Publish Docker
-on: 
+on:
   push:
-    branches:    
+    branches:
       - master
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
-      with:
-        dockerfile: Dockerfile
-        name: docker.pkg.github.com/kristianfjones/vcenter-networks/vcenter-network
-        username: ${{ secrets.DOCKER_GITHUB_USERNAME }}
-        password: ${{ secrets.DOCKER_GITHUB_PASSWORD }}
-        registry: docker.pkg.github.com
+      - uses: actions/checkout@master
+      - name: Publish to Registry
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          dockerfile: Dockerfile
+          name: docker.pkg.github.com/kristianfjones/vsphere-networks/vcenter-network
+          username: ${{ secrets.DOCKER_GITHUB_USERNAME }}
+          password: ${{ secrets.DOCKER_GITHUB_PASSWORD }}
+          registry: docker.pkg.github.com
