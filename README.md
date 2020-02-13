@@ -2,7 +2,7 @@
 
 ## Usage
 
-** Environment Variables **
+**Environment Variables**
 
 | Variable | Description      |
 | :------- | ---------------- |
